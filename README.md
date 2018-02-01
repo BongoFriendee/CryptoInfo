@@ -26,13 +26,4 @@ echo "Today's average" $( curl -s $cburl$dayavg"${curr^^}"$fiat | awk -F, '{prin
 done < <(sed -e '1,/starting/ d' $PWD/cryptoconfig)
 
 
-```
-html```
-#please define desired output currency for cryptocurrencies
-usd
 
-#list of cryptocurrencies that we would like information on.
-#script will read starting on net line
-btc
-ETH
-Ltc
