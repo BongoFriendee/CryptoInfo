@@ -1,0 +1,8 @@
+#please define desired real output currency
+usd
+
+#put a list of cryptocurrencies that you would like information for on the next lines
+#script will read starting on next line
+btc
+ETH
+Ltc
