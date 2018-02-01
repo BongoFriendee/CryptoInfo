@@ -1,7 +1,7 @@
 # CyptoInfo
 Simple bash script to get current prices of a list of cryptocurrencies from a config file.
 
-shell```
+```shell
 #!/bin/bash
 
 #defining basic urls
@@ -25,5 +25,16 @@ echo "Today's average" $( curl -s $cburl$dayavg"${curr^^}"$fiat | awk -F, '{prin
 
 done < <(sed -e '1,/starting/ d' $PWD/cryptoconfig)
 
+```
 
+```text
 
+#please define desired output currency for cryptocurrencies
+usd
+
+#list of cryptocurrencies that we would like information on.
+#script will read starting on net line
+btc
+ETH
+Ltc
+```
