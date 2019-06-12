@@ -33,7 +33,7 @@ Sample config file:
 usd
 
 #list of cryptocurrencies that we would like information on.
-#script will read starting on net line
+#script will read starting on next line
 btc
 ETH
 Ltc
